@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="" content="">
+  <title>triQUAD | To the moon!</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- JQ -->
+  <script src="./scripts/main.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+
+
+<body>
+  <!--Nav Bar -->
+  <nav>
+  <div class="nav-wrapper blue-grey darken-3">
+    <div class="container-fluid">
+    <a href="#" class="brand-logo">triQUAD</a>
+    </div>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+    </ul>
+  </div>
+</nav>
+
+  <div class="container-fluid">
+
+    <!-- Ticker Row  -->
+    <div class="row" style="margin-top: 20" id="">
+
+      <!-- BTC/CAD -->
+      <div class="col s12 m4" style="margin: 0px">
+        <div class="card deep-orange darken-4">
+          <div class="card-content white-text">
+            <span class="card-title">BTC/CAD</span>
+            <p><span class="orange-text text-lighten-2">A:</span> $ <span id="btc_cad_ask"></span></p>
+            <p><span class="orange-text text-lighten-2">B:</span> $ <span id="btc_cad_bid"></span></p>
+            <p><span class="orange-text text-lighten-2">V:</span> $ <span id="btc_cad_vol"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ETH/CAD -->
+      <div class="col s12 m4" style="margin: 0px">
+        <div class="card light-blue darken-4">
+          <div class="card-content white-text">
+            <span class="card-title">ETH/CAD</span>
+            <p><span class="light-blue-text text-lighten-3">A:</span> $ <span id="eth_cad_ask"></span></p>
+            <p><span class="light-blue-text text-lighten-3">B:</span> $ <span id="eth_cad_bid"></span></p>
+            <p><span class="light-blue-text text-lighten-3">V:</span> $ <span id="eth_cad_vol"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ETH/BTC -->
+      <div class="col s12 m4" style="margin: 0px">
+        <div class="card deep-purple darken-2">
+          <div class="card-content white-text">
+            <span class="card-title">ETH/BTC</span>
+            <p><span class="purple-text text-lighten-3">A:</span> Ƀ <span id="eth_btc_ask"></span></p>
+            <p><span class="purple-text text-lighten-3">B:</span> Ƀ <span id="eth_btc_bid"></span></p>
+            <p><span class="purple-text text-lighten-3">V:</span> $ <span id="eth_btc_vol"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results row -->
+    <div class="row ">
+      <!-- Total price and chart 1 -->
+      <div class="col s12 m12 " style="">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+            <div class="float-right">
+              <span class="card-title" id="infos1"></span>
+            </div>
+            <a class="btn disabled">BTC</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn red lighten-1">BTC/CAD</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn green lighten-1">ETH/CAD</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn red lighten-1">ETH/BTC</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Results row -->
+    <div class="row">
+      <!-- Total price and chart 2 -->
+      <div class="col s12 m12 " style="">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+            <div class="float-right">
+              <span class="card-title" id="infos2"></span>
+            </div>
+            <a class="btn disabled">BTC</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn green lighten-1">ETH/BTC</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn red lighten-1">ETH/CAD</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn green lighten-1">BTC/CAD</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Results row -->
+    <div class="row">
+      <!-- Total price and chart 3 -->
+      <div class="col s12 m12 " style="">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+            <div class="float-right">
+              <span class="card-title" id="infos3"></span>
+            </div>
+            <a class="btn disabled">ETH</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn red lighten-1">ETH/CAD</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn green lighten-1">BTC/CAD</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn green lighten-1">ETH/BTC</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Results row -->
+    <div class="row">
+      <!-- Total price and chart 4 -->
+      <div class="col s12 m12" style="">
+        <div class="card blue-grey darken-1">
+          <div class="card-content white-text">
+
+            <div class="float-right">
+              <span class="card-title" id="infos4"></span>
+            </div>
+            <a class="btn disabled">ETH</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn red lighten-1">ETH/BTC</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn red lighten-1">BTC/CAD</a>
+            <a class="btn-flat"><i class="material-icons">arrow_forward</i></a>
+            <a class="btn green lighten-1">ETH/CAD</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+
+</html>

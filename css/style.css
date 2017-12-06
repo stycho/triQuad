@@ -1,0 +1,87 @@
+/* Global */
+body {
+  background: #b0bec5;
+}
+
+.float-right {
+  float: right;
+}
+
+.card
+{
+     margin: 0px !important;
+}
+.btn-flat {
+  padding: 0;
+}
+
+.navBtnImg {
+  -webkit-filter: invert(100%) !important;
+  padding: 0px 0px 0px 20px;
+}
+
+/* Bootstrap */
+
+.jumbotron {
+  background-color: #E1E2E1;
+  box-shadow: 0px 1px 4px #bbb;
+}
+
+.navbar-dark {
+  background-color: #009386;
+  z-index: 5;
+  box-shadow: 0px 2px 4px #bbb;
+  margin-bottom: 5px;
+  }
+
+i {
+  padding: 0px;
+  margin-right: -50px;
+
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+  }
+
+/Global/
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#branding {
+  float: left;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  position: fixed;
+  background: #2EC4B6;
+  box-shadow: 0px 2px 4px #2c3e50;
+}
+*/
